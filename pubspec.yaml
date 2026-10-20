@@ -2,7 +2,7 @@ name: liquid_glass_ui
 description: >-
   Configurable liquid-glass surfaces, controls, navigation bars, overlays and
   spring-driven animations for Flutter, inspired by Apple's Liquid Glass design.
-version: 0.5.0
+version: 1.0.0
 homepage: https://github.com/sajiths07/liquid_glass_ui
 repository: https://github.com/sajiths07/liquid_glass_ui
 issue_tracker: https://github.com/sajiths07/liquid_glass_ui/issues

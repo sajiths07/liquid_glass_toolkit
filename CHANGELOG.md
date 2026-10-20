@@ -1,8 +1,9 @@
 # Changelog
 
-## 0.5.0
+## 1.0.0
 
-A complete liquid glass framework. The 0.x API is kept.
+First stable release: a complete liquid glass framework. The 0.x API is
+kept.
 
 ### Added
 

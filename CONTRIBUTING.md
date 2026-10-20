@@ -54,7 +54,7 @@ cd example && flutter analyze && flutter test
 1. Update `version` in `pubspec.yaml` and move the changelog entries under
    the new version.
 2. Run `flutter pub publish --dry-run`.
-3. Commit, then tag and push: `git tag v0.5.0 && git push origin v0.5.0`.
+3. Commit, then tag and push: `git tag v1.0.0 && git push origin v1.0.0`.
    The publish workflow releases to pub.dev once automated publishing is
    enabled for the package.
 

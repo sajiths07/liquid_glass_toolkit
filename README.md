@@ -75,7 +75,7 @@ or add it to `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  liquid_glass_ui: ^0.5.0
+  liquid_glass_ui: ^1.0.0
 ```
 
 Then import it:
@@ -771,7 +771,7 @@ import 'package:liquid_glass_ui/widgets/liquid_glass_container.dart';
 LiquidGlassContainer(blur: 10, opacity: 0.2, child: Text('Still works'));
 ```
 
-Visual changes in 0.5.0: `LiquidGlassContainer` now renders through the new
+Visual changes in 1.0.0: `LiquidGlassContainer` now renders through the new
 glass engine (gradient border, highlights and a soft shadow), and the
 default text color comes from the glass theme. Pass
 `quality: LiquidGlassQuality.minimal` for a look closer to 0.4.

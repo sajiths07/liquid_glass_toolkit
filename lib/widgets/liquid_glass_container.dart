@@ -12,7 +12,7 @@ import '../src/widgets/liquid_glass_surface.dart';
 /// tint at [opacity] over a backdrop blurred with sigma [blur], with 16 px
 /// corners by default).
 ///
-/// Since 0.5.0 it renders through [LiquidGlassSurface], so it also gains the
+/// Since 1.0.0 it renders through [LiquidGlassSurface], so it also gains the
 /// theme's border, lighting and shadow. Pass [style] to control those, or
 /// use [LiquidGlassSurface] directly for full control.
 class LiquidGlassContainer extends StatelessWidget {

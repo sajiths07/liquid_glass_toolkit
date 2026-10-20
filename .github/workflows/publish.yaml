@@ -1,4 +1,4 @@
-# Publishes to pub.dev when a version tag such as `v0.5.0` is pushed.
+# Publishes to pub.dev when a version tag such as `v1.0.0` is pushed.
 #
 # Uses pub.dev automated publishing (OIDC), so no token is stored in the
 # repository. Enable it first on pub.dev: package Admin tab > Automated
