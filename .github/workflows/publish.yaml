@@ -2,7 +2,7 @@
 #
 # Uses pub.dev automated publishing (OIDC), so no token is stored in the
 # repository. Enable it first on pub.dev: package Admin tab > Automated
-# publishing > GitHub Actions, repository `sajiths07/liquid_glass_ui`, tag
+# publishing > GitHub Actions, repository `sajiths07/liquid_glass_widget`, tag
 # pattern `v{{version}}`.
 name: Publish to pub.dev
 

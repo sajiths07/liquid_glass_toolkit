@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:liquid_glass_ui/liquid_glass_ui.dart';
-import 'package:liquid_glass_ui/src/rendering/glass_painters.dart';
+import 'package:liquid_glass_widget/liquid_glass_widget.dart';
+import 'package:liquid_glass_widget/src/rendering/glass_painters.dart';
 
 import 'helpers.dart';
 
@@ -232,7 +232,7 @@ void main() {
     });
 
     testWidgets('legacy import path still works', (tester) async {
-      // The 0.x import `package:liquid_glass_ui/widgets/liquid_glass_container.dart`
+      // The 0.x import `package:liquid_glass_widget/widgets/liquid_glass_container.dart`
       // is exercised by legacy_import_test.dart.
       expect(LiquidGlassContainer, isNotNull);
     });

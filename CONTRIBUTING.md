@@ -1,12 +1,12 @@
 # Contributing
 
-Thanks for helping improve `liquid_glass_ui`.
+Thanks for helping improve `liquid_glass_widget`.
 
 ## Getting started
 
 ```sh
-git clone https://github.com/sajiths07/liquid_glass_ui.git
-cd liquid_glass_ui
+git clone https://github.com/sajiths07/liquid_glass_widget.git
+cd liquid_glass_widget
 flutter pub get
 cd example && flutter pub get && flutter run
 ```
@@ -15,7 +15,7 @@ cd example && flutter pub get && flutter run
 
 | Path | Contents |
 | --- | --- |
-| `lib/liquid_glass_ui.dart` | Public exports. |
+| `lib/liquid_glass_widget.dart` | Public exports. |
 | `lib/src/core` | `LiquidGlassStyle` and `LiquidGlassQuality`. |
 | `lib/src/rendering` | Backdrop filters, painters and the refraction render object. |
 | `lib/src/shaders` | Shader loading and capability detection. |

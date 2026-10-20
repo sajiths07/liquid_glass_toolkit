@@ -1,5 +1,5 @@
 #version 460 core
-// liquid_glass_ui: backdrop refraction for a rounded-rectangle glass surface.
+// liquid_glass_widget: backdrop refraction for a rounded-rectangle glass surface.
 // Used through ImageFilter.shader on a BackdropFilter (Impeller only).
 // Content behind the edge band is sampled further inwards, which makes the rim
 // look like a thick, convex lens. A small amount of chromatic dispersion is

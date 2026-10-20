@@ -1,4 +1,4 @@
-package com.example.liquid_glass_ui
+package com.example.liquid_glass_widget
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:liquid_glass_ui/liquid_glass_ui.dart';
-import 'package:liquid_glass_ui_example/demo_config.dart';
-import 'package:liquid_glass_ui_example/main.dart';
-import 'package:liquid_glass_ui_example/pages/gallery_page.dart';
+import 'package:liquid_glass_widget/liquid_glass_widget.dart';
+import 'package:liquid_glass_widget_example/demo_config.dart';
+import 'package:liquid_glass_widget_example/main.dart';
+import 'package:liquid_glass_widget_example/pages/gallery_page.dart';
 
 void main() {
   Future<void> pumpApp(WidgetTester tester, DemoConfig config) async {

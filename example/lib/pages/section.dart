@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_glass_ui/liquid_glass_ui.dart';
+import 'package:liquid_glass_widget/liquid_glass_widget.dart';
 
 /// A small section header used across the demo pages.
 class Section extends StatelessWidget {

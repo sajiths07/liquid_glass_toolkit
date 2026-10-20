@@ -7,7 +7,8 @@ import '../src/widgets/liquid_glass_surface.dart';
 
 /// A widget that applies a frosted glass effect to its child.
 ///
-/// This is the original widget of `liquid_glass_ui` and keeps its 0.x API:
+/// This is the original widget of the package (published as
+/// `liquid_glass_ui` 0.x) and keeps its API:
 /// [blur], [opacity], [padding] and [borderRadius] behave as before (a white
 /// tint at [opacity] over a backdrop blurred with sigma [blur], with 16 px
 /// corners by default).

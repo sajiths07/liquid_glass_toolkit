@@ -2,8 +2,10 @@
 
 ## 1.0.0
 
-First stable release: a complete liquid glass framework. The 0.x API is
-kept.
+First release as `liquid_glass_widget`, previously published as
+`liquid_glass_ui` (0.0.1 to 0.4.0). A complete liquid glass framework; the
+0.x `LiquidGlassContainer` API is kept. To migrate, replace
+`liquid_glass_ui` with `liquid_glass_widget` in `pubspec.yaml` and imports.
 
 ### Added
 
@@ -63,7 +65,7 @@ kept.
 *   Text and icons inside glass default to the theme foreground color.
 *   Minimum SDK is now Dart 3.8 / Flutter 3.32.
 
-## 0.4.0
+## 0.4.0 (as liquid_glass_ui)
 
 *   Added a preview screenshot to the `README.md` for better visibility on pub.dev and GitHub.
 *   Pushed all local changes to the remote repository to resolve `pub.dev` analysis issues.

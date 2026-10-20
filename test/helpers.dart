@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_glass_ui/liquid_glass_ui.dart';
+import 'package:liquid_glass_widget/liquid_glass_widget.dart';
 
 /// Wraps [child] in a MaterialApp with a colorful background so glass has
 /// something to blur.

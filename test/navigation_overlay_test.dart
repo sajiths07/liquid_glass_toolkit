@@ -4,8 +4,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:liquid_glass_ui/liquid_glass_ui.dart';
-import 'package:liquid_glass_ui/src/overlays/liquid_glass_overlays.dart'
+import 'package:liquid_glass_widget/liquid_glass_widget.dart';
+import 'package:liquid_glass_widget/src/overlays/liquid_glass_overlays.dart'
     show glassMorphDestination;
 
 import 'helpers.dart';

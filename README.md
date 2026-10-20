@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/banner.png" alt="liquid_glass_ui: liquid glass surfaces, controls, navigation and overlays for Flutter">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/banner.png" alt="liquid_glass_widget: liquid glass surfaces, controls, navigation and overlays for Flutter">
 </p>
 
-# liquid_glass_ui
+# liquid_glass_widget
 
-[![pub package](https://img.shields.io/pub/v/liquid_glass_ui.svg)](https://pub.dev/packages/liquid_glass_ui)
-[![CI](https://github.com/sajiths07/liquid_glass_ui/actions/workflows/ci.yaml/badge.svg)](https://github.com/sajiths07/liquid_glass_ui/actions/workflows/ci.yaml)
+[![pub package](https://img.shields.io/pub/v/liquid_glass_widget.svg)](https://pub.dev/packages/liquid_glass_widget)
+[![CI](https://github.com/sajiths07/liquid_glass_widget/actions/workflows/ci.yaml/badge.svg)](https://github.com/sajiths07/liquid_glass_widget/actions/workflows/ci.yaml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Configurable **liquid glass** surfaces, controls, navigation, overlays and
@@ -13,9 +13,9 @@ spring-driven animations for Flutter, inspired by Apple's Liquid Glass
 design language. Pure Flutter, no other dependencies.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/gallery.png" width="240" alt="Glass surfaces and the floating navigation bar">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/controls.png" width="240" alt="Glass controls">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/dark.png" width="240" alt="Dark mode">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/gallery.png" width="240" alt="Glass surfaces and the floating navigation bar">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/controls.png" width="240" alt="Glass controls">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/dark.png" width="240" alt="Dark mode">
 </p>
 
 ## Contents
@@ -43,7 +43,7 @@ design language. Pure Flutter, no other dependencies.
 - [Animation](#animation)
 - [Accessibility](#accessibility)
 - [Performance tips](#performance-tips)
-- [Migrating from 0.4.x](#migrating-from-04x)
+- [Migrating from liquid_glass_ui](#migrating-from-liquid_glass_ui)
 - [Platform support and limitations](#platform-support-and-limitations)
 - [Example app](#example-app)
 - [Contributing](#contributing)
@@ -63,25 +63,25 @@ design language. Pure Flutter, no other dependencies.
 | **Navigation** | Scaffold, app bar, back button, a floating navigation bar with a clear water-drop indicator, and a glass page transition. |
 | **Overlays** | Dialog, bottom sheet, menu and a morph that grows a panel out of its trigger. |
 | **Accessibility** | Semantics, keyboard focus and activation, 44 px touch targets, text scaling, reduced motion, reduced transparency and high contrast. |
-| **Compatibility** | The 0.x `LiquidGlassContainer` and its import path still work. |
+| **Compatibility** | The `LiquidGlassContainer` widget from the earlier `liquid_glass_ui` package still works. |
 
 ## Installation
 
 ```sh
-flutter pub add liquid_glass_ui
+flutter pub add liquid_glass_widget
 ```
 
 or add it to `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  liquid_glass_ui: ^1.0.0
+  liquid_glass_widget: ^1.0.0
 ```
 
 Then import it:
 
 ```dart
-import 'package:liquid_glass_ui/liquid_glass_ui.dart';
+import 'package:liquid_glass_widget/liquid_glass_widget.dart';
 ```
 
 Requires Dart 3.8+ and Flutter 3.32+. No platform setup is needed; the
@@ -93,7 +93,7 @@ A complete app with a glass app bar, a floating navigation bar and a card:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:liquid_glass_ui/liquid_glass_ui.dart';
+import 'package:liquid_glass_widget/liquid_glass_widget.dart';
 
 void main() => runApp(const MyApp());
 
@@ -312,7 +312,7 @@ LiquidGlassNavigationBar(
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/colors.png" width="260" alt="Pink theme accent with a green per-tab override">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/colors.png" width="260" alt="Pink theme accent with a green per-tab override">
   <br><em>Pink theme accent; the Controls tab overrides it with green.</em>
 </p>
 
@@ -571,9 +571,9 @@ a thin bright edge and a soft shadow. It stretches like liquid while it
 moves or is dragged.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/gallery.png" width="240" alt="Default capsule drop">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/drop_circle.png" width="240" alt="Circle drop with blue shadow">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/drop_tinted.png" width="240" alt="Rounded drop with pink shadow">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/gallery.png" width="240" alt="Default capsule drop">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/drop_circle.png" width="240" alt="Circle drop with blue shadow">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/drop_tinted.png" width="240" alt="Rounded drop with pink shadow">
   <br><em>Capsule (default), circle with a blue shadow and 1.3x magnification, rounded rectangle with a pink shadow.</em>
 </p>
 
@@ -761,19 +761,28 @@ LiquidGlassAppear(
 - Avoid wrapping glass in `Opacity`; use `LiquidGlassAppear` or
   `LiquidGlassTransition`.
 
-## Migrating from 0.4.x
+## Migrating from liquid_glass_ui
 
-Existing code keeps compiling:
+This package continues the 0.x `liquid_glass_ui` package under a new
+name. Update the dependency and the imports:
+
+```yaml
+dependencies:
+  liquid_glass_widget: ^1.0.0   # was liquid_glass_ui: ^0.4.0
+```
 
 ```dart
-import 'package:liquid_glass_ui/widgets/liquid_glass_container.dart';
+import 'package:liquid_glass_widget/liquid_glass_widget.dart';
+
+// The original widget and its import path still work:
+import 'package:liquid_glass_widget/widgets/liquid_glass_container.dart';
 
 LiquidGlassContainer(blur: 10, opacity: 0.2, child: Text('Still works'));
 ```
 
-Visual changes in 1.0.0: `LiquidGlassContainer` now renders through the new
-glass engine (gradient border, highlights and a soft shadow), and the
-default text color comes from the glass theme. Pass
+Visual changes: `LiquidGlassContainer` now renders through the new glass
+engine (gradient border, highlights and a soft shadow), and the default
+text color comes from the glass theme. Pass
 `quality: LiquidGlassQuality.minimal` for a look closer to 0.4.
 
 ## Platform support and limitations
@@ -804,20 +813,20 @@ The [`example`](example) app has four tabs:
   mode, reduced motion and reduced transparency.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/overlays.png" width="240" alt="Overlays page">
-  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_ui/main/screenshots/configure.png" width="240" alt="Live configuration page">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/overlays.png" width="240" alt="Overlays page">
+  <img src="https://raw.githubusercontent.com/sajiths07/liquid_glass_widget/main/screenshots/configure.png" width="240" alt="Live configuration page">
 </p>
 
 ```sh
-git clone https://github.com/sajiths07/liquid_glass_ui.git
-cd liquid_glass_ui/example
+git clone https://github.com/sajiths07/liquid_glass_widget.git
+cd liquid_glass_widget/example
 flutter run
 ```
 
 ## Contributing
 
 Issues and pull requests are welcome on
-[GitHub](https://github.com/sajiths07/liquid_glass_ui). See
+[GitHub](https://github.com/sajiths07/liquid_glass_widget). See
 [CONTRIBUTING.md](CONTRIBUTING.md) for the project layout and checks, and
 [SECURITY.md](SECURITY.md) to report a vulnerability.
 
