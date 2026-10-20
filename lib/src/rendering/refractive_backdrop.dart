@@ -191,7 +191,7 @@ class RenderRefractiveBackdrop extends RenderProxyBox {
         FlutterErrorDetails(
           exception: error,
           stack: stack,
-          library: 'liquid_glass_widget',
+          library: 'liquid_glass_toolkit',
           context: ErrorDescription(
             'while creating the refraction filter; premium refraction is '
             'disabled and surfaces fall back to standard quality',

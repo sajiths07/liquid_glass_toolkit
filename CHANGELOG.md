@@ -2,10 +2,10 @@
 
 ## 1.0.0
 
-First release as `liquid_glass_widget`, previously published as
+First release as `liquid_glass_toolkit`, previously published as
 `liquid_glass_ui` (0.0.1 to 0.4.0). A complete liquid glass framework; the
 0.x `LiquidGlassContainer` API is kept. To migrate, replace
-`liquid_glass_ui` with `liquid_glass_widget` in `pubspec.yaml` and imports.
+`liquid_glass_ui` with `liquid_glass_toolkit` in `pubspec.yaml` and imports.
 
 ### Added
 

@@ -1,5 +1,5 @@
-name: liquid_glass_widget_example
-description: Interactive showcase and live configurator for liquid_glass_widget.
+name: liquid_glass_toolkit_example
+description: Interactive showcase and live configurator for liquid_glass_toolkit.
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  liquid_glass_widget:
+  liquid_glass_toolkit:
     path: ../
 
 dev_dependencies:

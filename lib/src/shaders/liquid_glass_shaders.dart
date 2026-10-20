@@ -37,7 +37,7 @@ enum LiquidGlassShaderStatus {
 abstract final class LiquidGlassShaders {
   static const String _lightingName = 'shaders/glass_lighting.frag';
   static const String _refractionName = 'shaders/glass_refraction.frag';
-  static const String _packagePrefix = 'packages/liquid_glass_widget/';
+  static const String _packagePrefix = 'packages/liquid_glass_toolkit/';
 
   static final ValueNotifier<LiquidGlassShaderStatus> _status =
       ValueNotifier<LiquidGlassShaderStatus>(LiquidGlassShaderStatus.notLoaded);
@@ -96,7 +96,7 @@ abstract final class LiquidGlassShaders {
         FlutterErrorDetails(
           exception: error,
           stack: stack,
-          library: 'liquid_glass_widget',
+          library: 'liquid_glass_toolkit',
           context: ErrorDescription(
             'while loading liquid glass shaders; surfaces will use the '
             'canvas fallback',
@@ -106,7 +106,7 @@ abstract final class LiquidGlassShaders {
     }
   }
 
-  /// Shader assets are keyed with a `packages/liquid_glass_widget/` prefix when
+  /// Shader assets are keyed with a `packages/liquid_glass_toolkit/` prefix when
   /// the package is a dependency, and without it when this package is the
   /// root project (its own tests). The manifest tells us which one exists.
   static Future<String> _resolvePrefix() async {
@@ -121,7 +121,7 @@ abstract final class LiquidGlassShaders {
       return '';
     }
     throw StateError(
-      'liquid_glass_widget shader assets were not found in the asset manifest. '
+      'liquid_glass_toolkit shader assets were not found in the asset manifest. '
       'Make sure the package is a regular pub dependency so its `shaders:` '
       'section is bundled.',
     );

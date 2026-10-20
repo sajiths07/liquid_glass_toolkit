@@ -1,5 +1,5 @@
 #version 460 core
-// liquid_glass_widget: directional rim light, inner bevel and specular lobe for a
+// liquid_glass_toolkit: directional rim light, inner bevel and specular lobe for a
 // rounded-rectangle glass surface. Painted on top of the tint, below content.
 
 #include <flutter/runtime_effect.glsl>

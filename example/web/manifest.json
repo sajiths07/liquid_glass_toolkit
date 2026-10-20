@@ -1,6 +1,6 @@
 {
-    "name": "liquid_glass_widget",
-    "short_name": "liquid_glass_widget",
+    "name": "liquid_glass_toolkit",
+    "short_name": "liquid_glass_toolkit",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

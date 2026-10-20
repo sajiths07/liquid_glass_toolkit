@@ -1,6 +1,6 @@
-# liquid_glass_widget example
+# liquid_glass_toolkit example
 
-Interactive showcase for [`liquid_glass_widget`](https://pub.dev/packages/liquid_glass_widget).
+Interactive showcase for [`liquid_glass_toolkit`](https://pub.dev/packages/liquid_glass_toolkit).
 
 - **Gallery**: surfaces, quality modes, style presets, cards with the glass
   page transition, and the legacy `LiquidGlassContainer`.

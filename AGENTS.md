@@ -2,13 +2,13 @@
 
 Guidance for AI coding agents working in this repository.
 
-- This is a published Flutter package (`liquid_glass_widget`). Do not rename
+- This is a published Flutter package (`liquid_glass_toolkit`). Do not rename
   it, change its license or repository URL, or reuse a published version.
 - Never run `flutter pub publish` (only `--dry-run`). Releases happen by
   pushing a `v<version>` tag, done by a maintainer.
 - Never add tokens or credentials to the repository.
 - Keep the public API backwards compatible, including the
-  `package:liquid_glass_widget/widgets/liquid_glass_container.dart` import.
+  `package:liquid_glass_toolkit/widgets/liquid_glass_container.dart` import.
 - The package depends only on Flutter. Do not add dependencies without
   maintainer approval.
 - Before finishing, run `dart format .`, `flutter analyze` and

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_glass_widget/liquid_glass_widget.dart';
+import 'package:liquid_glass_toolkit/liquid_glass_toolkit.dart';
 
 import '../demo_config.dart';
 import 'section.dart';

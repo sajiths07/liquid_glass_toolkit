@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_glass_widget/liquid_glass_widget.dart';
+import 'package:liquid_glass_toolkit/liquid_glass_toolkit.dart';
 
 import 'demo_config.dart';
 import 'pages/controls_page.dart';
@@ -24,7 +24,7 @@ class LiquidGlassDemoApp extends StatelessWidget {
           data: config.themeFor(Brightness.light),
           darkData: config.themeFor(Brightness.dark),
           child: MaterialApp(
-            title: 'Liquid Glass Widget',
+            title: 'Liquid Glass Toolkit',
             debugShowCheckedModeBanner: false,
             themeMode: config.themeMode,
             theme: ThemeData(

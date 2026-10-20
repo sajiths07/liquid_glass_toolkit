@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_glass_widget/liquid_glass_widget.dart';
+import 'package:liquid_glass_toolkit/liquid_glass_toolkit.dart';
 // The 0.x import path keeps working.
-import 'package:liquid_glass_widget/widgets/liquid_glass_container.dart'
+import 'package:liquid_glass_toolkit/widgets/liquid_glass_container.dart'
     as legacy;
 
 import '../main.dart';

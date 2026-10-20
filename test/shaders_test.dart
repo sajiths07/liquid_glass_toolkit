@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:liquid_glass_widget/liquid_glass_widget.dart';
+import 'package:liquid_glass_toolkit/liquid_glass_toolkit.dart';
 
 const List<String> _shaders = <String>[
   'glass_lighting.frag',
