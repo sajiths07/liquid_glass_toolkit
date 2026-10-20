@@ -54,7 +54,7 @@ jobs:
         run: flutter test --timeout 60s
       - name: Upload golden failures
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: golden-failures-${{ matrix.os }}
           path: test/failures/
