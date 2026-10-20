@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    name: Format and analyze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Install dependencies
+        run: |
+          flutter pub get
+          (cd example && flutter pub get)
+      - name: Check formatting
+        run: dart format --output=none --set-exit-if-changed .
+      - name: Analyze package
+        run: flutter analyze
+      - name: Analyze example
+        working-directory: example
+        run: flutter analyze
+
+  test:
+    name: Test (${{ matrix.os }})
+    needs: analyze
+    strategy:
+      fail-fast: false
+      matrix:
+        # Golden images are generated on Windows; they are skipped elsewhere.
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Test package
+        run: flutter test --timeout 60s
+      - name: Test example
+        working-directory: example
+        run: flutter test --timeout 60s
+      - name: Upload golden failures
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: golden-failures-${{ matrix.os }}
+          path: test/failures/
+          if-no-files-found: ignore
+
+  build-example:
+    name: Build example (web)
+    needs: analyze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Build web
+        working-directory: example
+        run: flutter build web
+
+  publish-dry-run:
+    name: Publish dry run
+    needs: analyze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Validate package
+        run: flutter pub publish --dry-run

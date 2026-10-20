@@ -1,0 +1,54 @@
+name: Bug report
+description: Something renders or behaves incorrectly.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report a bug. Please fill in as much as you can.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: A small, complete `main.dart` that shows the problem.
+      render: dart
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Visual issues are much easier to fix with a picture.
+  - type: input
+    id: package-version
+    attributes:
+      label: liquid_glass_ui version
+      placeholder: 0.5.0
+    validations:
+      required: true
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Platforms
+      multiple: true
+      options: [Android, iOS, Web, Windows, macOS, Linux]
+    validations:
+      required: true
+  - type: dropdown
+    id: quality
+    attributes:
+      label: Quality mode
+      options: [minimal, standard, premium, not sure]
+  - type: textarea
+    id: doctor
+    attributes:
+      label: flutter doctor -v
+      render: text
+    validations:
+      required: true

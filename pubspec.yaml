@@ -1,0 +1,42 @@
+name: liquid_glass_ui
+description: >-
+  Configurable liquid-glass surfaces, controls, navigation bars, overlays and
+  spring-driven animations for Flutter, inspired by Apple's Liquid Glass design.
+version: 0.5.0
+homepage: https://github.com/sajiths07/liquid_glass_ui
+repository: https://github.com/sajiths07/liquid_glass_ui
+issue_tracker: https://github.com/sajiths07/liquid_glass_ui/issues
+topics:
+  - glassmorphism
+  - ui
+  - animation
+  - shaders
+  - widget
+
+screenshots:
+  - description: Glass surfaces and the floating navigation bar with a water-drop indicator.
+    path: screenshots/gallery.png
+  - description: Circular water-drop indicator with a colored shadow.
+    path: screenshots/drop_circle.png
+  - description: Dark mode.
+    path: screenshots/dark.png
+  - description: Theme accent color with a per-tab navigation color override.
+    path: screenshots/colors.png
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  shaders:
+    - shaders/glass_lighting.frag
+    - shaders/glass_refraction.frag

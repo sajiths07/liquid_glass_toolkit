@@ -1,0 +1,30 @@
+# Tooling and build output
+.dart_tool/
+.idea/
+.vscode/
+*.iml
+build/
+coverage/
+pubspec.lock
+
+# Repository-only files
+.github/
+AGENTS.md
+
+# Screenshots not listed in pubspec.yaml (the README loads them from GitHub)
+screenshots/preview.png
+screenshots/controls.png
+screenshots/overlays.png
+screenshots/configure.png
+screenshots/drop_tinted.png
+test/failures/
+.env
+.env.*
+
+# Example build output and platform caches
+example/build/
+example/.dart_tool/
+example/**/ephemeral/
+example/**/Pods/
+example/**/.gradle/
+example/*.iml
