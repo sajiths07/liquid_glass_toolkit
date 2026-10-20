@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Usage questions
-    url: https://github.com/sajiths07/liquid_glass_widget/discussions
-    about: Ask how to use the package or share what you built.
+  - name: Usage guide
+    url: https://github.com/sajiths07/liquid_glass_widget#readme
+    about: How to install, theme and use every widget.
